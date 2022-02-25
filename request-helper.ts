@@ -2,7 +2,7 @@ import axios from 'axios';
 
 /**
  * Returns http response from a post request given payload and optional header.
- * @param {ednpoint} request endpoint
+ * @param {endpoint} request endpoint
  * @param {payload} query payload
  * @param {header} header information
  * @return http response object
@@ -11,7 +11,7 @@ import axios from 'axios';
    const response await axios({
      url: `http://localhost:5000/${endpoint}`,
      method: 'post',
-     responseTJype: 'json',
+     responseType: 'json',
      headers: header,
      data: payload,
    });
